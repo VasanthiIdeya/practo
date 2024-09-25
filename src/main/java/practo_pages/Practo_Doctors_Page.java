@@ -10,29 +10,27 @@ import practo_base.Practo_Base;
 
 	public class Practo_Doctors_Page extends Practo_Base
 	{
-
-	    //Locator for the book button (Book Clinic Visit)
 	    By Doctors = By.xpath("//button[@data-qa-id=\"book_button\"]");
 	    By days=By.xpath("//div[@class='u-pos-rel c-slots-header__daybar ']/div");
 	    By slots=By.xpath("//div[@data-qa-id=\"slot_time\"]");
 	    By filter=By.xpath("//*[@id=\"container\"]/div/div[3]/div/div/header/div[1]/div/div[4]");
-	    
-	    //By fee=By.xpath("//input[@type='radio' and value = '₹0-₹500']");
+	    By DoctorsList=By.xpath("//h2[@class=\"doctor-name\"]");
 	    By fee=By.xpath("//*[@id=\"container\"]/div/div[3]/div/div/header/div[2]/div/div[2]/div/label[1]");
+	    
+	  
 	    // Method to select a random doctor and return the doctor's name
 	    public String select_doctor() throws Exception 
 	    {
-	        // Fetch all doctor booking buttons
 	        List<WebElement> doctors_list = driver.findElements(Doctors);
 	        Random rand = new Random();
 	        int randomDoctorIndex = rand.nextInt(doctors_list.size()); 
 	        doctors_list.get(randomDoctorIndex).click();
-	        List<WebElement> doctor_names = driver.findElements(By.xpath("//h2[@class=\"doctor-name\"]"));
+	        List<WebElement> doctor_names = driver.findElements(DoctorsList);
 	        String selectedDoctorName = doctor_names.get(randomDoctorIndex-1).getText(); // Get the doctor's name at the random index
 	        return selectedDoctorName; 
 	    }
 	    
-	    //Method to select a slot 
+	    //Method to select a slot in the selected doctor
 	    public String select_slot() throws Exception
 		{
 			List<WebElement> day_list=driver.findElements(days);

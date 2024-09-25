@@ -6,7 +6,10 @@
       <class name="practo_test.Practo_Test">
         <methods>
           <include name="Browser_Setup"/>
-          <include name="check_filteration"/>
+          <include name="check_name_time_date"/>
+          <include name="Report_flush"/>
+          <include name="Report_Generation"/>
+          <include name="Driver_close"/>
         </methods>
       </class> <!-- practo_test.Practo_Test -->
     </classes>

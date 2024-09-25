@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-24T20:39:07 IST" name="practo suite" finished-at="2024-09-24T20:40:05 IST" duration-ms="58789">
+  <suite started-at="2024-09-25T12:03:21 IST" name="practo suite" finished-at="2024-09-25T12:05:20 IST" duration-ms="119809">
     <groups>
     </groups>
-    <test started-at="2024-09-24T20:39:07 IST" name="edge" finished-at="2024-09-24T20:39:33 IST" duration-ms="26294">
+    <test started-at="2024-09-25T12:03:21 IST" name="edge" finished-at="2024-09-25T12:04:23 IST" duration-ms="62822">
       <class name="practo_test.Practo_Test">
-        <test-method is-config="true" signature="Browser_Setup(java.lang.String)[pri:0, instance:practo_test.Practo_Test@4a003cbe]" started-at="2024-09-24T20:39:07 IST" name="Browser_Setup" finished-at="2024-09-24T20:39:11 IST" duration-ms="4105" status="PASS">
+        <test-method is-config="true" signature="Browser_Setup(java.lang.String)[pri:0, instance:practo_test.Practo_Test@4a003cbe]" started-at="2024-09-25T12:03:21 IST" name="Browser_Setup" finished-at="2024-09-25T12:03:26 IST" duration-ms="5368" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,65 +18,61 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Browser_Setup -->
-        <test-method signature="check_name_time_date()[pri:2, instance:practo_test.Practo_Test@4a003cbe]" started-at="2024-09-24T20:39:11 IST" name="check_name_time_date" finished-at="2024-09-24T20:39:33 IST" duration-ms="21964" status="FAIL">
-          <exception class="java.lang.IndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index -1 out of bounds for length 10]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 10
-at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-at java.base/java.util.Objects.checkIndex(Objects.java:385)
-at java.base/java.util.ArrayList.get(ArrayList.java:427)
-at practo_pages.Practo_Doctors_Page.select_doctor(Practo_Doctors_Page.java:31)
-at practo_test.Practo_Test.check_name_time_date(Practo_Test.java:64)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+        <test-method signature="check_speciality()[pri:1, instance:practo_test.Practo_Test@4a003cbe]" started-at="2024-09-25T12:03:26 IST" name="check_speciality" finished-at="2024-09-25T12:03:38 IST" duration-ms="11456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_speciality -->
+        <test-method is-config="true" signature="Driver_close()[pri:0, instance:practo_test.Practo_Test@4a003cbe]" started-at="2024-09-25T12:03:38 IST" name="Driver_close" finished-at="2024-09-25T12:03:38 IST" duration-ms="348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Driver_close -->
+        <test-method is-config="true" signature="Browser_Setup(java.lang.String)[pri:0, instance:practo_test.Practo_Test@4a003cbe]" started-at="2024-09-25T12:03:38 IST" name="Browser_Setup" finished-at="2024-09-25T12:03:43 IST" duration-ms="4682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser_Setup -->
+        <test-method signature="check_name_time_date()[pri:2, instance:practo_test.Practo_Test@4a003cbe]" started-at="2024-09-25T12:03:43 IST" name="check_name_time_date" finished-at="2024-09-25T12:04:02 IST" duration-ms="19176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_name_time_date -->
-        <test-method is-config="true" signature="Driver_close()[pri:0, instance:practo_test.Practo_Test@4a003cbe]" started-at="2024-09-24T20:39:33 IST" name="Driver_close" finished-at="2024-09-24T20:39:33 IST" duration-ms="192" status="PASS">
+        <test-method is-config="true" signature="Driver_close()[pri:0, instance:practo_test.Practo_Test@4a003cbe]" started-at="2024-09-25T12:04:02 IST" name="Driver_close" finished-at="2024-09-25T12:04:02 IST" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Driver_close -->
+        <test-method is-config="true" signature="Browser_Setup(java.lang.String)[pri:0, instance:practo_test.Practo_Test@4a003cbe]" started-at="2024-09-25T12:04:02 IST" name="Browser_Setup" finished-at="2024-09-25T12:04:07 IST" duration-ms="4689" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser_Setup -->
+        <test-method signature="check_filteration()[pri:3, instance:practo_test.Practo_Test@4a003cbe]" started-at="2024-09-25T12:04:07 IST" name="check_filteration" finished-at="2024-09-25T12:04:23 IST" duration-ms="16487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_filteration -->
+        <test-method is-config="true" signature="Driver_close()[pri:0, instance:practo_test.Practo_Test@4a003cbe]" started-at="2024-09-25T12:04:23 IST" name="Driver_close" finished-at="2024-09-25T12:04:23 IST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Driver_close -->
       </class> <!-- practo_test.Practo_Test -->
     </test> <!-- edge -->
-    <test started-at="2024-09-24T20:39:33 IST" name="chrome" finished-at="2024-09-24T20:40:05 IST" duration-ms="32433">
+    <test started-at="2024-09-25T12:04:24 IST" name="chrome" finished-at="2024-09-25T12:05:20 IST" duration-ms="56891">
       <class name="practo_test.Practo_Test">
-        <test-method is-config="true" signature="Report_Generation()[pri:0, instance:practo_test.Practo_Test@3cce5371]" started-at="2024-09-24T20:39:06 IST" name="Report_Generation" finished-at="2024-09-24T20:39:07 IST" duration-ms="205" status="PASS">
+        <test-method is-config="true" signature="Report_Generation()[pri:0, instance:practo_test.Practo_Test@431cd9b2]" started-at="2024-09-25T12:03:20 IST" name="Report_Generation" finished-at="2024-09-25T12:03:21 IST" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Report_Generation -->
-        <test-method is-config="true" signature="Browser_Setup(java.lang.String)[pri:0, instance:practo_test.Practo_Test@3cce5371]" started-at="2024-09-24T20:39:33 IST" name="Browser_Setup" finished-at="2024-09-24T20:39:35 IST" duration-ms="1884" status="PASS">
+        <test-method is-config="true" signature="Browser_Setup(java.lang.String)[pri:0, instance:practo_test.Practo_Test@431cd9b2]" started-at="2024-09-25T12:04:24 IST" name="Browser_Setup" finished-at="2024-09-25T12:04:27 IST" duration-ms="3003" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,55 +83,53 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Browser_Setup -->
-        <test-method signature="check_name_time_date()[pri:2, instance:practo_test.Practo_Test@3cce5371]" started-at="2024-09-24T20:39:35 IST" name="check_name_time_date" finished-at="2024-09-24T20:40:05 IST" duration-ms="30412" status="FAIL">
-          <exception class="java.time.format.DateTimeParseException">
-            <message>
-              <![CDATA[Text 'On Sep 25, 2024' could not be parsed at index 0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.time.format.DateTimeParseException: Text 'On Sep 25, 2024' could not be parsed at index 0
-at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2108)
-at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:2010)
-at java.base/java.time.LocalDate.parse(LocalDate.java:435)
-at practo_pages.Practo_Confirmation_Page.validateDate(Practo_Confirmation_Page.java:22)
-at practo_test.Practo_Test.check_name_time_date(Practo_Test.java:70)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.time.format.DateTimeParseException -->
+        <test-method signature="check_speciality()[pri:1, instance:practo_test.Practo_Test@431cd9b2]" started-at="2024-09-25T12:04:27 IST" name="check_speciality" finished-at="2024-09-25T12:04:39 IST" duration-ms="12094" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- check_name_time_date -->
-        <test-method is-config="true" signature="Driver_close()[pri:0, instance:practo_test.Practo_Test@3cce5371]" started-at="2024-09-24T20:40:05 IST" name="Driver_close" finished-at="2024-09-24T20:40:05 IST" duration-ms="136" status="PASS">
+        </test-method> <!-- check_speciality -->
+        <test-method is-config="true" signature="Driver_close()[pri:0, instance:practo_test.Practo_Test@431cd9b2]" started-at="2024-09-25T12:04:39 IST" name="Driver_close" finished-at="2024-09-25T12:04:39 IST" duration-ms="262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Driver_close -->
-        <test-method is-config="true" signature="Report_flush()[pri:0, instance:practo_test.Practo_Test@3cce5371]" started-at="2024-09-24T20:40:05 IST" name="Report_flush" finished-at="2024-09-24T20:40:06 IST" duration-ms="495" status="PASS">
+        <test-method is-config="true" signature="Browser_Setup(java.lang.String)[pri:0, instance:practo_test.Practo_Test@431cd9b2]" started-at="2024-09-25T12:04:39 IST" name="Browser_Setup" finished-at="2024-09-25T12:04:42 IST" duration-ms="2976" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser_Setup -->
+        <test-method signature="check_name_time_date()[pri:2, instance:practo_test.Practo_Test@431cd9b2]" started-at="2024-09-25T12:04:42 IST" name="check_name_time_date" finished-at="2024-09-25T12:05:01 IST" duration-ms="18780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_name_time_date -->
+        <test-method is-config="true" signature="Driver_close()[pri:0, instance:practo_test.Practo_Test@431cd9b2]" started-at="2024-09-25T12:05:01 IST" name="Driver_close" finished-at="2024-09-25T12:05:01 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Driver_close -->
+        <test-method is-config="true" signature="Browser_Setup(java.lang.String)[pri:0, instance:practo_test.Practo_Test@431cd9b2]" started-at="2024-09-25T12:05:01 IST" name="Browser_Setup" finished-at="2024-09-25T12:05:04 IST" duration-ms="2843" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser_Setup -->
+        <test-method signature="check_filteration()[pri:3, instance:practo_test.Practo_Test@431cd9b2]" started-at="2024-09-25T12:05:04 IST" name="check_filteration" finished-at="2024-09-25T12:05:20 IST" duration-ms="16398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_filteration -->
+        <test-method is-config="true" signature="Driver_close()[pri:0, instance:practo_test.Practo_Test@431cd9b2]" started-at="2024-09-25T12:05:20 IST" name="Driver_close" finished-at="2024-09-25T12:05:20 IST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Driver_close -->
+        <test-method is-config="true" signature="Report_flush()[pri:0, instance:practo_test.Practo_Test@431cd9b2]" started-at="2024-09-25T12:05:20 IST" name="Report_flush" finished-at="2024-09-25T12:05:21 IST" duration-ms="907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Report_flush -->

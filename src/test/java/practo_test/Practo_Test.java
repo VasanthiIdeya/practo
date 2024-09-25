@@ -24,10 +24,11 @@ Practo_Confirmation_Page confirm = new Practo_Confirmation_Page();
 ExtentTest test;
 By actualslot = By.xpath("//*[@id='container']/div[2]/div/div[1]/div/div[1]/div[2]/div[1]/div[2]/span[2]");
 By actualdoctor=By.xpath("//*[@id='container']/div[2]/div/div[1]/div/div[1]/div[3]/div/div[2]/div[1]");
+
 @Test(priority = 1)
 public void check_speciality() throws Exception
 {
-	test=report.createTest("checking every doctor speciality");
+	test=report.createTest("Verify Every Doctor's Specialization");
 	Practo_Base.Open_URL();
 	home.enter_city();
 	home.enter_specialization();
@@ -41,14 +42,14 @@ public void check_speciality() throws Exception
     	{
             System.out.println("failed");
             allMatched = false;
-            test.log(Status.FAIL, "some doctors donot have the expected specialization");
+            test.log(Status.FAIL, "Verification failed: Some doctors do not have the expected specialization");
             break;
         } 
     }
     Assert.assertTrue(allMatched, "Some doctors do not have the expected specialization");
     if(allMatched=true)
     {
-    	test.log(Status.PASS, "All doctors have same speciality");
+    	test.log(Status.PASS, "Verified: All listed doctors have the same specialization");
     }
 
 }
@@ -57,7 +58,7 @@ public void check_speciality() throws Exception
 
 public void check_name_time_date() throws Exception
 {
-	test=report.createTest("checking name and time of selected doctor with the actual doctor");
+	test=report.createTest("Validate Selected Doctor's Name and Appointment Details");
 	Practo_Base.Open_URL();
 	home.enter_city();
 	home.enter_specialization();
@@ -68,24 +69,27 @@ public void check_name_time_date() throws Exception
 	String actual_doctor_name=driver.findElement(actualdoctor).getText();
 	System.out.println(actual_doctor_name);
 	LocalDate selectedDate = Practo_Confirmation_Page.validateDate();
+	System.out.println(selectedDate);
 	LocalDate today = LocalDate.now();   
+	System.out.println(today);	
 	LocalDate tomorrow = today.plusDays(1);
+	System.out.println(tomorrow);
 	if(actual_doctor_name.matches(SelectedDoctor) && actual_slot.matches(SelectedSlot) && (selectedDate.equals(today) || selectedDate.equals(tomorrow)))
 	{
-		test.log(Status.PASS, "Doctor name,slot and date is matched");
-		System.out.println("Doctor name & slot matched");
+		test.log(Status.PASS, "Doctor's name, appointment slot, and date matched successfully.");
+		System.out.println("Doctor name,slot and date is matched");
 		
 	}
 	else
 	{
-		test.log(Status.FAIL,"Doctor name and slot is not matched");
+		System.out.println("Doctor name,slot and date is not matched");
+		test.log(Status.FAIL,"Verification failed: Doctor's name and appointment slot does not matched");
 	}
-	
 }
 @Test(priority = 3)
 public void check_filteration() throws Exception
 {
-	test=report.createTest("Applying filter and checking whether it applies or not");
+	test=report.createTest("Verifying Filter Functionality and Results Accuracy");
 	Practo_Base.Open_URL();
 	home.enter_city();
 	home.enter_specialization();
@@ -107,14 +111,13 @@ public void check_filteration() throws Exception
           {
               allDoctorsInRange = false;
               System.out.println("failed");
-              test.log(Status.FAIL,"All doctors doesnot have same range");
+              test.log(Status.FAIL,"Verification failed: Not all doctors have the same range.");
               break;
           }
       }
     if(allDoctorsInRange)
     {
-    	test.log(Status.PASS,"All doctors are in the same range");
+    	test.log(Status.PASS,"Verification successful: All doctors are within the same range.");
     }
-      System.out.println("passed");
 }
 }

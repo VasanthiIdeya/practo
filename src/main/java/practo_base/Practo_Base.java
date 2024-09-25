@@ -29,19 +29,23 @@ protected static Properties properties;
 public static WebDriver driver;
 
 @BeforeSuite
+//Method to generate report
 public static void Report_Generation()
 {
 	    htmlreport = new ExtentSparkReporter(new File("C:\\Users\\VasanthiM\\Downloads\\practoreport.html"));
-	    htmlreport.config().setReportName("saucelabs cucumber");
-	    htmlreport.config().setDocumentTitle("saucelabs Test");
+	    htmlreport.config().setReportName("PractoReport");
+	    htmlreport.config().setDocumentTitle("PractoTestCasesDocument");
 	    htmlreport.config().setTheme(Theme.DARK);
 	    report = new ExtentReports();
 	    report.setSystemInfo("Environment", "TestEnv");
 	    report.setSystemInfo("TesterName", "Priya");
 	    report.attachReporter(htmlreport);
 }
+
+
 @BeforeMethod
 @Parameters({"x"})
+//method for setup
 public static void Browser_Setup(String x)
 {
 	properties = new Properties();
@@ -66,15 +70,21 @@ public static void Browser_Setup(String x)
     driver.manage().window().maximize();
     
 }
+
+//method to open_url
 public static void Open_URL()
 {
 	driver.get(properties.getProperty("url"));
 }
+
+//method to close the browser
 @AfterMethod
 public static void Driver_close()
 {
 	driver.close();
 }
+
+//method to save the report
 @AfterSuite
 public static void Report_flush()
 {
